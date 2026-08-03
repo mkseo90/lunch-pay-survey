@@ -110,6 +110,7 @@
     <input type="search" id="q" placeholder="식당 검색" />
     <button class="tbtn" id="btn-todo">미조사만</button>
     <button class="tbtn" id="btn-near">📍 가까운순</button>
+    <button class="tbtn" id="btn-sync">☁</button>
   </div>
 </header>
 
@@ -150,6 +151,22 @@
   </div>
 </dialog>
 
+<dialog id="dlg-sync">
+  <h2>☁ GitHub 자동 백업</h2>
+  <p style="font-size:13px;color:var(--ink-2);margin-bottom:4px">
+    입력할 때마다 lunch-pay-survey 저장소에 자동 업로드됩니다.
+    토큰은 이 폰에만 저장돼요.
+  </p>
+  <label>GitHub 토큰 (fine-grained, Contents 쓰기)</label>
+  <input id="sync-token" type="password" placeholder="github_pat_..." autocomplete="off" />
+  <div id="sync-status" style="font-size:13px;color:var(--ink-2);margin-top:10px">—</div>
+  <div class="dlg-actions">
+    <button class="fbtn" id="sync-close">닫기</button>
+    <button class="fbtn" id="sync-now">지금 백업</button>
+    <button class="fbtn primary" id="sync-save">저장</button>
+  </div>
+</dialog>
+
 <div class="toast" id="toast"></div>
 
 <script>
@@ -172,7 +189,112 @@ function load() {
 function save() {
   db.updatedAt = new Date().toISOString();
   localStorage.setItem(KEY, JSON.stringify(db));
+  scheduleSync();
 }
+
+// ── GitHub 자동 백업 ─────────────────────────────────────
+// 입력 후 3초 지나면 저장소의 data/survey.json 에 커밋 (fine-grained 토큰 필요)
+const TOKEN_KEY = "lunch_pay_survey_gh_token";
+const GH_FILE = "https://api.github.com/repos/mkseo90/lunch-pay-survey/contents/data/survey.json";
+let ghToken = localStorage.getItem(TOKEN_KEY) || "";
+let remoteSha = null;      // null = 아직 모름, undefined = 파일 없음
+let syncTimer = null, syncing = false, syncMsg = "";
+
+function ghHeaders() {
+  return { "Authorization": "Bearer " + ghToken, "Accept": "application/vnd.github+json" };
+}
+function b64(str) {
+  const bytes = new TextEncoder().encode(str);
+  let bin = "";
+  for (let i = 0; i < bytes.length; i += 0x8000)
+    bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+  return btoa(bin);
+}
+function b64dec(s) {
+  const bin = atob(s.replace(/\n/g, ""));
+  return new TextDecoder().decode(Uint8Array.from(bin, (c) => c.charCodeAt(0)));
+}
+function setCloud(msg, icon) {
+  syncMsg = msg;
+  $("btn-sync").textContent = icon || "☁";
+  const st = $("sync-status");
+  if (st) st.textContent = msg;
+}
+function scheduleSync() {
+  if (!ghToken) return;
+  clearTimeout(syncTimer);
+  syncTimer = setTimeout(syncNow, 3000);
+}
+async function syncNow() {
+  if (!ghToken || syncing) { if (syncing) scheduleSync(); return; }
+  syncing = true;
+  setCloud("업로드 중…", "⏳");
+  try {
+    if (remoteSha === null) {
+      const r = await fetch(GH_FILE, { headers: ghHeaders() });
+      if (r.status === 200) remoteSha = (await r.json()).sha;
+      else if (r.status === 404) remoteSha = undefined;
+      else throw new Error("HTTP " + r.status);
+    }
+    const body = JSON.stringify({
+      exportedAt: new Date().toISOString(),
+      payTypes: db.payTypes, entries: db.entries, added: db.added,
+    }, null, 2);
+    const payload = { message: "survey sync", content: b64(body) };
+    if (remoteSha) payload.sha = remoteSha;
+    const r2 = await fetch(GH_FILE, {
+      method: "PUT",
+      headers: { ...ghHeaders(), "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    if (r2.status === 409 || r2.status === 422) { remoteSha = null; throw new Error("충돌 — 다시 시도하세요"); }
+    if (!r2.ok) throw new Error("HTTP " + r2.status);
+    remoteSha = (await r2.json()).content.sha;
+    setCloud("백업됨 " + new Date().toLocaleTimeString("ko-KR", { hour12: false }), "☁✓");
+  } catch (e) {
+    setCloud("백업 실패: " + e.message + (e.message.includes("401") ? " (토큰 확인)" : ""), "☁!");
+  }
+  syncing = false;
+}
+// 로컬이 비어 있고 서버에 백업이 있으면 복원 제안
+async function maybeRestore() {
+  if (!ghToken) return;
+  const empty = !Object.keys(db.entries).length && !db.added.length;
+  if (!empty) return;
+  try {
+    const r = await fetch(GH_FILE, { headers: ghHeaders() });
+    if (r.status !== 200) return;
+    const j = await r.json();
+    remoteSha = j.sha;
+    const remote = JSON.parse(b64dec(j.content));
+    const n = Object.keys(remote.entries || {}).length;
+    if (!n && !(remote.added || []).length) return;
+    if (confirm(`서버 백업(조사 ${n}곳)이 있습니다. 불러올까요?`)) {
+      db.entries = remote.entries || {};
+      db.added = remote.added || [];
+      db.payTypes = remote.payTypes || db.payTypes;
+      localStorage.setItem(KEY, JSON.stringify(db));   // save()의 재업로드 없이 저장만
+      render();
+      toast("복원 완료");
+    }
+  } catch {}
+}
+
+$("btn-sync").onclick = () => {
+  $("sync-token").value = ghToken;
+  $("sync-status").textContent = syncMsg || (ghToken ? "토큰 저장됨" : "토큰이 없으면 백업이 꺼져 있습니다");
+  $("dlg-sync").showModal();
+};
+$("sync-close").onclick = () => $("dlg-sync").close();
+$("sync-save").onclick = () => {
+  ghToken = $("sync-token").value.trim();
+  if (ghToken) localStorage.setItem(TOKEN_KEY, ghToken);
+  else localStorage.removeItem(TOKEN_KEY);
+  remoteSha = null;
+  toast(ghToken ? "토큰 저장됨 — 자동 백업 켜짐" : "토큰 삭제됨 — 백업 꺼짐");
+  if (ghToken) syncNow();
+};
+$("sync-now").onclick = () => { remoteSha = null; syncNow(); };
 
 // ── 데이터 ──────────────────────────────────────────────
 let seed = [];
@@ -185,6 +307,7 @@ async function boot() {
     if (res.ok) seed = await res.json();
   } catch {}
   render();
+  maybeRestore();
 }
 
 function allRestaurants() {

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#e8590c"/>
+  <g stroke="#fff" stroke-linecap="round" fill="none">
+    <!-- 포크 -->
+    <path d="M18 13 v8 a5 5 0 0 0 10 0 v-8" stroke-width="3.2"/>
+    <path d="M23 13 v13" stroke-width="3.2"/>
+    <path d="M23 26 v25" stroke-width="4"/>
+    <!-- 숟가락 -->
+    <ellipse cx="41" cy="20" rx="6.5" ry="9" fill="#fff" stroke="none"/>
+    <path d="M41 27 v24" stroke-width="4"/>
+  </g>
+</svg>

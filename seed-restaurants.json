@@ -404,5 +404,16 @@
     "placeUrl": "https://place.map.kakao.com/1658131262",
     "memo": "이탈리안 포르투7 · ⭐4.2 · 코엑스마곡",
     "zeropay": false
+  },
+  {
+    "id": "r_okn10dak",
+    "name": "오근내10닭갈비 마곡코엑스점",
+    "category": "치킨/고기",
+    "lat": 37.56477741,
+    "lng": 126.82506883,
+    "address": "서울 강서구 마곡중앙로 143 코엑스마곡",
+    "placeUrl": "https://place.map.kakao.com/1603746167",
+    "memo": "춘천식 닭갈비 · 코엑스마곡",
+    "zeropay": false
   }
 ]

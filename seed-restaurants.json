@@ -414,6 +414,7 @@
     "address": "서울 강서구 마곡중앙로 143 코엑스마곡",
     "placeUrl": "https://place.map.kakao.com/1603746167",
     "memo": "춘천식 닭갈비 · 코엑스마곡",
-    "zeropay": false
+    "zeropay": false,
+    "payco": true
   }
 ]

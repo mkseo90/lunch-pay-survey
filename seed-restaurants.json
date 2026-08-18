@@ -39,7 +39,8 @@
     "lng": 126.82360463,
     "address": "서울 강서구 마곡동 768-2 1층 145호",
     "placeUrl": "https://place.map.kakao.com/1706051795",
-    "memo": ""
+    "memo": "",
+    "rain": true
   },
   {
     "id": "r_c4a0545f",
@@ -193,7 +194,8 @@
     "lng": 126.82360576,
     "address": "서울 강서구 마곡동 768-2 1층 109, 162호",
     "placeUrl": "https://place.map.kakao.com/1771145435",
-    "memo": ""
+    "memo": "",
+    "rain": true
   },
   {
     "id": "r_87514c11",
@@ -214,7 +216,8 @@
     "address": "서울 강서구 마곡중앙로 143 지하2층",
     "placeUrl": "https://place.map.kakao.com/330877584",
     "memo": "🌮🍺 멕시칸 · 코로나·도스에키스 등 · 밥집",
-    "zeropay": false
+    "zeropay": false,
+    "rain": true
   },
   {
     "id": "r_14h90t",
@@ -225,7 +228,8 @@
     "address": "서울 강서구 공항대로 165 B동 1층 E116~E117호",
     "placeUrl": "https://place.map.kakao.com/858439859",
     "memo": "🌮🍺 멕시칸 다이닝(바토스 계열) · 수제맥주/코로나 · ⭐4.2",
-    "zeropay": false
+    "zeropay": false,
+    "rain": true
   },
   {
     "id": "r_hopz6e",
@@ -236,7 +240,8 @@
     "address": "서울 강서구 공항대로 165 B동 1층 E122호",
     "placeUrl": "https://place.map.kakao.com/1385026916",
     "memo": "🍔🍺 수제버거(브루클린더버거조인트) · 크래프트/수입맥주",
-    "zeropay": false
+    "zeropay": false,
+    "rain": true
   },
   {
     "id": "r_3dly6s",
@@ -270,7 +275,8 @@
     "address": "서울 강서구 마곡중앙로 105-7 케이스퀘어 마곡 B동 지하2층 B204-1호",
     "placeUrl": "https://place.map.kakao.com/1598325847",
     "memo": "중식 일일미미 · ⭐4.8 (116) · 사무실 앞",
-    "zeropay": false
+    "zeropay": false,
+    "rain": true
   },
   {
     "id": "r_s197s",
@@ -281,7 +287,8 @@
     "address": "서울 강서구 마곡중앙로 105-7 케이스퀘어마곡 지하2층 B208호",
     "placeUrl": "https://place.map.kakao.com/1789502212",
     "memo": "수산·한식 · ⭐4.7 (36) · 사무실 앞",
-    "zeropay": false
+    "zeropay": false,
+    "rain": true
   },
   {
     "id": "r_ct4hse",
@@ -304,7 +311,8 @@
     "placeUrl": "https://place.map.kakao.com/2058308185",
     "memo": "초밥 스시도쿠 · ⭐4.8 (57) · 사무실 앞",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_85rgzb",
@@ -348,7 +356,8 @@
     "address": "서울 강서구 마곡중앙로 105-7 K스퀘어 마곡 2동 지하2층 B203호",
     "placeUrl": "https://place.map.kakao.com/1368487727",
     "memo": "닭갈비 · ⭐4.4(57) · 사무실 앞 106m",
-    "zeropay": false
+    "zeropay": false,
+    "rain": true
   },
   {
     "id": "r_pyzrxl",
@@ -384,7 +393,8 @@
     "placeUrl": "https://place.map.kakao.com/289308007",
     "memo": "한식 단정 · ⭐4.4 · 코엑스마곡",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_nvek0n",
@@ -396,7 +406,8 @@
     "placeUrl": "https://place.map.kakao.com/1284399274",
     "memo": "한정식·솥밥 일품진진수라 · ⭐5.0(99) · 코엑스마곡 지하2층",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_bhx1k",
@@ -408,7 +419,8 @@
     "placeUrl": "https://place.map.kakao.com/1373763664",
     "memo": "해물·생선 어부몽 · ⭐4.3 · 코엑스마곡",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_ek67ae",
@@ -419,7 +431,8 @@
     "address": "서울 강서구 마곡중앙로 143 CP1 지하2층 227~229호",
     "placeUrl": "https://place.map.kakao.com/1658131262",
     "memo": "이탈리안 포르투7 · ⭐4.2 · 코엑스마곡",
-    "zeropay": false
+    "zeropay": false,
+    "rain": true
   },
   {
     "id": "r_okn10dak",
@@ -431,7 +444,8 @@
     "placeUrl": "https://place.map.kakao.com/1603746167",
     "memo": "춘천식 닭갈비 · 코엑스마곡",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb1433534125",
@@ -1295,7 +1309,8 @@
     "placeUrl": "https://place.map.kakao.com/1092957927",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb202810956",
@@ -1331,7 +1346,8 @@
     "placeUrl": "https://place.map.kakao.com/1702054751",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb340967681",
@@ -1343,7 +1359,8 @@
     "placeUrl": "https://place.map.kakao.com/340967681",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb1657302872",
@@ -1355,7 +1372,8 @@
     "placeUrl": "https://place.map.kakao.com/1657302872",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb_vendrm",
@@ -1367,7 +1385,8 @@
     "placeUrl": "",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb1805749177",
@@ -1379,7 +1398,8 @@
     "placeUrl": "https://place.map.kakao.com/1805749177",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb331853747",
@@ -1391,7 +1411,8 @@
     "placeUrl": "https://place.map.kakao.com/331853747",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb1151751505",
@@ -1403,7 +1424,8 @@
     "placeUrl": "https://place.map.kakao.com/1151751505",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb379677007",
@@ -1415,7 +1437,8 @@
     "placeUrl": "https://place.map.kakao.com/379677007",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb1278900872",
@@ -1427,7 +1450,8 @@
     "placeUrl": "https://place.map.kakao.com/1278900872",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb_krwkix",
@@ -1439,7 +1463,8 @@
     "placeUrl": "",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb_dfqxeu",
@@ -1451,7 +1476,8 @@
     "placeUrl": "",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb_ymvxd9",
@@ -1475,7 +1501,8 @@
     "placeUrl": "",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb_s60ruw",
@@ -1499,7 +1526,8 @@
     "placeUrl": "",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb_d0a9nn",
@@ -1523,7 +1551,8 @@
     "placeUrl": "",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb_y8p63n",
@@ -1547,7 +1576,8 @@
     "placeUrl": "",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb_3tsy39",
@@ -1559,7 +1589,8 @@
     "placeUrl": "",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb_tzx9iv",
@@ -1571,7 +1602,8 @@
     "placeUrl": "",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   },
   {
     "id": "r_pb_i34htc",
@@ -1595,6 +1627,7 @@
     "placeUrl": "https://place.map.kakao.com/1166653732",
     "memo": "",
     "zeropay": false,
-    "payco": true
+    "payco": true,
+    "rain": true
   }
 ]

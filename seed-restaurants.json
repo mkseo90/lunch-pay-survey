@@ -17,7 +17,8 @@
     "lng": 126.82759523,
     "address": "서울 강서구 마곡동 760 마곡나루역보타닉푸르지오시티 2층 236~237호",
     "placeUrl": "https://place.map.kakao.com/2085624188",
-    "memo": ""
+    "memo": "",
+    "payco": true
   },
   {
     "id": "r_e052be0e",
@@ -27,7 +28,8 @@
     "lng": 126.82617275,
     "address": "서울 강서구 마곡동 759-3 보타닉파크타워1 1층 103,104호",
     "placeUrl": "https://place.map.kakao.com/729920991",
-    "memo": ""
+    "memo": "",
+    "payco": true
   },
   {
     "id": "r_9f963c70",
@@ -59,7 +61,8 @@
     "placeUrl": "https://place.map.kakao.com/1087213781",
     "menuUrl": "https://map.naver.com/p/search/%EC%BF%A1%ED%82%B9%ED%8F%AC%EC%9C%A0/place/2004631119?c=15.00,0,0,0,dh&placePath=%2Fhome%3Fbk_query%3D%EC%BF%A1%ED%82%B9%ED%8F%AC%EC%9C%A0%26entry%3Dbmp%26from%3Dmap%26fromPanelNum%3D2%26locale%3Dko%26svcName%3Dmap_pcv5%26searchText%3D%EC%BF%A1%ED%82%B9%ED%8F%AC%EC%9C%A0",
     "memo": "",
-    "rain": true
+    "rain": true,
+    "payco": true
   },
   {
     "id": "r_64bea9",
@@ -80,7 +83,8 @@
     "address": "서울 강서구 마곡동 767 르웨스트시티 본동 지하2층 214호",
     "placeUrl": "https://place.map.kakao.com/1032277497",
     "memo": "",
-    "rain": true
+    "rain": true,
+    "payco": true
   },
   {
     "id": "r_c08f2d73",
@@ -91,7 +95,8 @@
     "address": "서울 강서구 마곡동 767 지하2층 221호",
     "placeUrl": "https://place.map.kakao.com/1805007507",
     "memo": "",
-    "rain": true
+    "rain": true,
+    "payco": true
   },
   {
     "id": "r_14ce43b1",
@@ -121,7 +126,8 @@
     "lng": 126.82909443,
     "address": "서울 강서구 마곡동 773-2 마곡지엠지타워 1층 107~108호",
     "placeUrl": "https://place.map.kakao.com/273632635",
-    "memo": ""
+    "memo": "",
+    "payco": true
   },
   {
     "id": "r_33555296",
@@ -131,7 +137,8 @@
     "lng": 126.82882839,
     "address": "서울 강서구 마곡동 773-2 마곡GMG타워 1층 104~105호",
     "placeUrl": "https://place.map.kakao.com/402491563",
-    "memo": ""
+    "memo": "",
+    "payco": true
   },
   {
     "id": "r_35d57e75",
@@ -142,7 +149,8 @@
     "address": "서울 강서구 마곡동 769 지하1층 EB113호",
     "placeUrl": "https://place.map.kakao.com/1999758582",
     "memo": "",
-    "rain": true
+    "rain": true,
+    "payco": true
   },
   {
     "id": "r_9806362a",
@@ -164,7 +172,8 @@
     "address": "서울 강서구 마곡동 768-1 B동 지하2층 B201호",
     "placeUrl": "https://place.map.kakao.com/1234048934",
     "memo": "",
-    "rain": true
+    "rain": true,
+    "payco": true
   },
   {
     "id": "r_d1d81b59",
@@ -249,7 +258,8 @@
     "address": "서울 강서구 마곡중앙로 161-8 두산더랜드파크 B동 1층 113~114호",
     "placeUrl": "https://place.map.kakao.com/1437005388",
     "memo": "삼겹살·고기 · ⭐4.5 (102)",
-    "zeropay": false
+    "zeropay": false,
+    "payco": true
   },
   {
     "id": "r_p8gjsg",
@@ -293,7 +303,8 @@
     "address": "서울 강서구 마곡중앙로 143",
     "placeUrl": "https://place.map.kakao.com/2058308185",
     "memo": "초밥 스시도쿠 · ⭐4.8 (57) · 사무실 앞",
-    "zeropay": false
+    "zeropay": false,
+    "payco": true
   },
   {
     "id": "r_85rgzb",
@@ -348,7 +359,8 @@
     "address": "서울 강서구 마곡서로 158 마곡센트럴타워2차 2층",
     "placeUrl": "https://place.map.kakao.com/1743749269",
     "memo": "쭈꾸미·해물 · ⭐4.4(71)",
-    "zeropay": false
+    "zeropay": false,
+    "payco": true
   },
   {
     "id": "r_y2tnlb",
@@ -359,7 +371,8 @@
     "address": "서울 강서구 마곡중앙로 161-11 힐스테이트에코마곡나루역 에이동 2층 202~203호",
     "placeUrl": "https://place.map.kakao.com/2112037151",
     "memo": "쌈밥·한정식 · ⭐4.3(87)",
-    "zeropay": false
+    "zeropay": false,
+    "payco": true
   },
   {
     "id": "r_73zr2h",
@@ -370,7 +383,8 @@
     "address": "서울 강서구 마곡중앙로 143 르웨스트 시티 지하 2층 219호",
     "placeUrl": "https://place.map.kakao.com/289308007",
     "memo": "한식 단정 · ⭐4.4 · 코엑스마곡",
-    "zeropay": false
+    "zeropay": false,
+    "payco": true
   },
   {
     "id": "r_nvek0n",
@@ -381,7 +395,8 @@
     "address": "서울 강서구 마곡중앙로 143 르웨스트시티 지하2층 215~218호",
     "placeUrl": "https://place.map.kakao.com/1284399274",
     "memo": "한정식·솥밥 일품진진수라 · ⭐5.0(99) · 코엑스마곡 지하2층",
-    "zeropay": false
+    "zeropay": false,
+    "payco": true
   },
   {
     "id": "r_bhx1k",
@@ -392,7 +407,8 @@
     "address": "서울 강서구 마곡중앙로 143 지하2층 C102호",
     "placeUrl": "https://place.map.kakao.com/1373763664",
     "memo": "해물·생선 어부몽 · ⭐4.3 · 코엑스마곡",
-    "zeropay": false
+    "zeropay": false,
+    "payco": true
   },
   {
     "id": "r_ek67ae",

@@ -53,19 +53,6 @@
     "memo": ""
   },
   {
-    "id": "r_7e3c3d75",
-    "name": "쿡킹포유",
-    "category": "한식",
-    "lat": 37.56380936,
-    "lng": 126.82541744,
-    "address": "서울 강서구 마곡동 767-4",
-    "placeUrl": "https://place.map.kakao.com/1087213781",
-    "menuUrl": "https://map.naver.com/p/search/%EC%BF%A1%ED%82%B9%ED%8F%AC%EC%9C%A0/place/2004631119?c=15.00,0,0,0,dh&placePath=%2Fhome%3Fbk_query%3D%EC%BF%A1%ED%82%B9%ED%8F%AC%EC%9C%A0%26entry%3Dbmp%26from%3Dmap%26fromPanelNum%3D2%26locale%3Dko%26svcName%3Dmap_pcv5%26searchText%3D%EC%BF%A1%ED%82%B9%ED%8F%AC%EC%9C%A0",
-    "memo": "",
-    "rain": true,
-    "payco": true
-  },
-  {
     "id": "r_64bea9",
     "name": "오한수우육면가 마곡점",
     "category": "중식",
@@ -1616,18 +1603,5 @@
     "memo": "",
     "zeropay": false,
     "payco": true
-  },
-  {
-    "id": "r_pb1166653732",
-    "name": "삼청당 마곡코엑스점",
-    "category": "분식",
-    "lat": 37.56380936,
-    "lng": 126.82541744,
-    "address": "서울 강서구 마곡중앙로 111",
-    "placeUrl": "https://place.map.kakao.com/1166653732",
-    "memo": "",
-    "zeropay": false,
-    "payco": true,
-    "rain": true
   }
 ]
